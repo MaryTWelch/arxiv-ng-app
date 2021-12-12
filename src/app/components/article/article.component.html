@@ -1,0 +1,12 @@
+<div>ARTICLES:</div>
+
+<ul *ngFor="let article of articles">
+    <li>{{ article.title }}</li>
+    <li>Published: {{ article.published }}</li>
+    <li>Authors:</li>
+    <ol>
+        <ng-container *ngFor="let author of article.Authors">
+            <li>{{ author.name }}</li>
+        </ng-container>
+    </ol>
+</ul>

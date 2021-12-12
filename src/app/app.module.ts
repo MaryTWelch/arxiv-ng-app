@@ -5,10 +5,14 @@ import { ArxivService } from 'src/_services/arxiv.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ArticleComponent } from './components/article/article.component';
+import { AuthorComponent } from './components/author/author.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ArticleComponent,
+    AuthorComponent
   ],
   imports: [
     BrowserModule,
